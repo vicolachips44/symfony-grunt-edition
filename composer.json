@@ -19,6 +19,18 @@
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "4.3.*",
+        "phpunit/phpunit-mock-objects": "2.3.*",
+        "behat/behat": "3.0.*",
+        "behat/mink": "1.6.*",
+        "behat/mink-extension": "dev-master",
+        "nelmio/alice": "~1.7",
+        "behat/symfony2-extension": "dev-master",
+        "doctrine/data-fixtures": "2.0.*@dev",
+        "rezzza/alice-extension": "1.0.*@dev",
+        "behat/mink-selenium2-driver": "~1.2"
+    },
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
