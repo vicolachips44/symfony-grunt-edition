@@ -1,0 +1,46 @@
+build_settings:
+    ignore:
+        - "app/cache"
+        - "app/logs"
+
+setup:
+    composer:
+        action: "install"
+        prefer_dist: true
+
+    grunt:
+        gruntfile: gruntfile.js
+        task: default
+
+complete:
+    PackageBuild:
+        directory: "/home/vgar/dev/php/_www/PHPCI/PHPCI/build"
+        filename: "build-%build.id%"
+        format: tar
+
+    CleanBuild:
+        remove:
+            - "node_modules"
+            - "tests"
+            - "bin"
+            - "app/cache"
+            - "app/logs"
+            - "app/check.php"
+            - "web/css"
+            - "web/js"
+            - "web/vendor"
+            - "web/app_dev.php"
+            - "web/config.php"
+            - "behat.yml.dist"
+            - "bower.json"
+            - "composer.json"
+            - "composer.lock"
+            - "gruntfile.js"
+            - "package.json"
+            - "phpci.yml"
+
+#    CopyBuild:
+#        directory: "/var/www"
+#        output_directory: ""
+#        wipe: true
+
