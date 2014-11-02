@@ -7,8 +7,12 @@ default:
                 debug: true
         Behat\MinkExtension:
             base_url: 'http://127.0.0.1:8000'
-            browser_name: chrome
-            selenium2: ~
+            ## selenium
+            #browser_name: chrome
+            #selenium2: ~
+            ## zombie
+            browser_name: zombie
+            zombie: ~
     suites:
         acme_suite:
             type: symfony_bundle

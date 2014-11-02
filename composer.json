@@ -29,7 +29,8 @@
         "behat/symfony2-extension": "dev-master",
         "doctrine/data-fixtures": "2.0.*@dev",
         "rezzza/alice-extension": "1.0.*@dev",
-        "behat/mink-selenium2-driver": "~1.2"
+        "behat/mink-selenium2-driver": "~1.2",
+        "behat/mink-zombie-driver": "*"
     },
     "scripts": {
         "post-install-cmd": [
