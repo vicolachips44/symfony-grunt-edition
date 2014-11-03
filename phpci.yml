@@ -8,6 +8,9 @@ setup:
         action: "install"
         prefer_dist: true
 
+    composer:
+        action: dump-autoload --optimize
+
     grunt:
         gruntfile: gruntfile.js
         task: default
