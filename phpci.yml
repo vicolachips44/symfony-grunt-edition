@@ -17,7 +17,7 @@ setup:
 
 complete:
     PackageBuild:
-        directory: "/home/vgar/dev/php/_www/PHPCI/PHPCI/build"
+        directory: "~/dev/php/_www/PHPCI/PHPCI/build"
         filename: "build-%build.id%"
         format: tar
 
